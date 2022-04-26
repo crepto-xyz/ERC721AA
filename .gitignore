@@ -1,0 +1,9 @@
+node_modules/
+build/
+deploys/
+artifacts/
+cache/
+.env
+.DS_Store
+temp/
+.deps/
