@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "allowJs": true,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "types": [
+      "node",
+      "mocha"
+    ]
+  },
+  "include": ["./scripts", "./build", "./tests"],
+  "files": ["./hardhat.config.ts"]
+}
