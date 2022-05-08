@@ -21,46 +21,46 @@ export default {
     sources: "./contracts",
     cache: "./cache",
     artifacts: "./build",
-    tests: "./tests"
+    tests: "./tests",
   },
   networks: {
     hardhat: {
-      allowUnlimitedContractSize: false
+      allowUnlimitedContractSize: false,
     },
     kovan: {
       url: process.env.KOVAN_URL || defaultRpcUrl,
-      accounts: [process.env.PRIVATE_KEY || defaultKey]
+      accounts: [process.env.PRIVATE_KEY || defaultKey],
     },
     rinkeby: {
       url: process.env.RINKEBY_URL || defaultRpcUrl,
-      accounts: [process.env.PRIVATE_KEY || defaultKey]
+      accounts: [process.env.PRIVATE_KEY || defaultKey],
     },
     mainnet: {
       url: process.env.MAINNET_URL || defaultRpcUrl,
-      accounts: [process.env.PRIVATE_KEY || defaultKey]
-    }
+      accounts: [process.env.PRIVATE_KEY || defaultKey],
+    },
   },
   etherscan: {
     // Obtain etherscan API key at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_KEY
+    apiKey: process.env.ETHERSCAN_KEY,
   },
   solidity: {
     compilers: [
       {
-        version: "0.8.4",
+        version: "0.8.6",
         settings: {
           optimizer: {
             enabled: false,
-            runs: 200
-          }
-        }
-      }
-    ]
+            runs: 200,
+          },
+        },
+      },
+    ],
   },
   typechain: {
     outDir: "build/typechain",
     target: "ethers-v5",
     alwaysGenerateOverloads: false,
-    externalArtifacts: ["externalArtifacts/*.json"]
-  }
+    externalArtifacts: ["externalArtifacts/*.json"],
+  },
 };
