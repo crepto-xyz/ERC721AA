@@ -9,6 +9,7 @@ describe("ERC721A NFT", () => {
   before(async () => {
     [deployer, user] = await ethers.getSigners();
     erc721a = await (await ethers.getContractFactory("TestERC721A")).deploy();
+    await erc721a.mintTest(1);
   });
 
   it("Should get contract address after deploy", async () => {
