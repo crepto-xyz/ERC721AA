@@ -25,3 +25,9 @@ Result:
 | Mint 4 | [135,967](https://rinkeby.etherscan.io/tx/0x9046ef41f6dab8f988ae9f2a88854d23b81e725bb44989811527a89c5d33a350) | [63,613](https://rinkeby.etherscan.io/tx/0x36b98aea5121b88792904b7f6e738a6fa1aec448fd392ff22ba6eaf822841c86) | [62,942](https://rinkeby.etherscan.io/tx/0xf2e28c1918338bac157ab51df03422a51c08ebaac29397256bf4c8b1aa014153) |
 | Mint 5 | [161,925](https://rinkeby.etherscan.io/tx/0x731a9d9c9bc5f6afbd9eb8a6ee0d7fdd3c5920acd871605aa468909241f7e7d1) | [65,573](https://rinkeby.etherscan.io/tx/0x557a251ca0e87cced08dc8a527ddd3c58950427ce376dad06c24c59d00e2a80f) | [64,920](https://rinkeby.etherscan.io/tx/0xa7e04d35ce5fe90555c9642ee718c4bde26147281d12662d81a4758dbaeea1cf) |
 
+
+You can re-produce result locally by running command below:
+```bash
+npm install
+npm test
+```
